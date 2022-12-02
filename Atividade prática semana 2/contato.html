@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contato</title>
+</head>
+
+<body>
+        <header>
+            <table style="border-spacing: 10px;">
+                <tr>
+                    <td rowspan="2" class="td-header-img">
+                        <img src="img/face.jpg" alt="face">
+                    </td>
+                    <td>
+                        <h1 style="margin-bottom: 10px;">Pedro Renã da Silva Moreira</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 style="margin-top: 1px;">&lt;Designer e Desenvolvedor web></h5>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        
+        <table style="border-spacing: 10px;">
+            <tr>
+                <td colspan="4" style="border-collapse: 2px">
+                    <ul>
+                        <li>
+                            <a class="custom-button inative" href="index.html" title="Página principal">Principal</a>
+                        </li>
+                        <li>
+                            <a class="custom-button inative" href="quemsou.html" title="Sobre mim">Quem Sou</a>
+                        </li>
+                        <li>
+                            <a class="custom-button inative" href="projetos.html" title="Meus projetos">Projetos</a>
+                        </li>
+                        <li>
+                            <a class="custom-button active" href="contato.html" title="Meus contatos">Contato</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+    </table>
+
+    <table style="border-spacing: 10px;">
+        <tr>
+            <td>
+                <h1 style="font-size: 58px; margin-bottom: 1px">Entre em contato!</h1>
+                <p style="font-size: 18px; margin-top: 1px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nesciunt blanditiis placeat unde dolor perferendis adipisci illo ut, repudiandae porro, totam odio ipsa omnis fugit et asperiores? Velit, blanditiis accusantium!
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table style="border-spacing: 10px;">
+        <tr>
+            <td>
+                <p>
+                    <label for="assunto">Assunto</label><br>
+                    <select name="assunto" id="Assunto" required>
+                        <option value="SEL" hidden>Selecione o assunto</option>
+                        <option value="crit">Crítica</option>
+                        <option value="elog">Elogio</option>
+                        <option value="duvid">Dúvidas</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" id="nome" title="Digite seu nome" placeholder="Digite seu nome" required>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" title="Digite seu email" id="email"
+                        placeholder="Digite seu email" required>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <label for="phone">Telefone</label><br>
+                    <input type="tel" id="phone" title="Digite seu telefone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Exemplo: 99 99999-9999">
+                        
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <label for="message">Mensagem</label>
+                    <br>
+                    <textarea id="message" maxlength="500" title ="Digite aqui sua mensagem"
+                        placeholder="Digite aqui sua mensagem"></textarea>
+                </p>
+                <button class="custom-button-submit" type="submit"
+                    style="margin-left: 0;">Enviar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+                <h4 style="margin-bottom: 1px">Outras formas de contato:</h4>
+                <ul class="contacts">
+                    <li>Residente em Serra-ES</li>
+                    <li><a href="mailto:pedrorenanmoreira@gmail.com?">pedrorenanmoreira@gmail.com</a></li>
+                    <li>(27)988745164</li>
+                    <li><a href="https://www.linkedin.com/in/pedro-moreira-08bb751b5/" target="_blank"> LinkedIn</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Copyright © 2022</p>
+        <article>
+            <img src="img/ifes.png" alt="logo do ifes" width="80" height="90">
+        </article>
+    </footer>
+</body>
+</html>
